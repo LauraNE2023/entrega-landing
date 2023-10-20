@@ -1,0 +1,11 @@
+.box-gral{
+    @include boxes(100%,auto,20px 30px,auto)
+}
+.box-secondary{
+    @include boxes(80%,80vh,10px 40px, 20px )
+}
+.container-flex{
+    @include flexbox(row,center,flex-start,wrap);
+    background-color: $secondaryColor;
+    padding: 10px 50px;
+}

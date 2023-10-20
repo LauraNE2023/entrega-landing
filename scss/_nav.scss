@@ -1,0 +1,35 @@
+//nesting - anidación
+.menu{
+    background-color: $mainColor;
+    display: flex;
+    padding: 4px 30px;
+    align-items: center;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        li{
+            list-style: none;
+            margin-right: 10px;
+            a{
+                text-decoration: none;
+                font-size: $textMd;
+                color: $white;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+//bem
+.noticias{
+    background-color: $mainColor;
+    &__titulo{
+        color: $white;
+        &--xl{
+            font-size: $textXl
+        }
+    }
+}
+

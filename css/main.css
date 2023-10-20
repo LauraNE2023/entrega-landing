@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+.btn-gral, .btn-shadow, .btn-rounded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 30px;
+  background-color: rgb(106, 12, 62);
+  color: rgb(238, 235, 235);
+  width: 200px;
+  margin: 10px 30px;
+  text-decoration: none;
+}
+
+.btn-rounded {
+  border-radius: 8px;
+}
+
+.btn-shadow {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  color: red;
+  padding: 10px 30px;
+}
+
+.box-p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  line-height: 2.2em;
+  color: rgb(106, 12, 62);
+  padding: 10px 30px;
+}
+
+h1 {
+  font-size: 3em;
+  color: rgb(106, 12, 62);
+  margin: 10px auto;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  color: blue;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 30px;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: violet;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 30px;
+  text-align: right;
+}
+
+.bg-violet {
+  background-color: #bb20c1;
+}
+
+.bg-dark-violet {
+  background-color: #6f2f64;
+}
+
+.text-pink {
+  color: #df1ce6;
+}
+
+.text-gris {
+  color: #9b9a9b;
+}
+
+.box-shadow {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(106, 12, 62);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: rgb(106, 12, 62);
+}
+
+.menu {
+  background-color: rgb(106, 12, 62);
+  display: flex;
+  padding: 4px 30px;
+  align-items: center;
+}
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+.menu ul li {
+  list-style: none;
+  margin-right: 10px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: rgb(238, 235, 235);
+}
+.menu ul li a:hover {
+  color: rgb(40, 40, 40);
+}
+
+.noticias {
+  background-color: rgb(106, 12, 62);
+}
+.noticias__titulo {
+  color: rgb(238, 235, 235);
+}
+.noticias__titulo--xl {
+  font-size: 3em;
+}
+
+.box-gral {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+  margin: auto;
+  border: solid 1px grey;
+}
+
+.box-secondary {
+  width: 80%;
+  height: 80vh;
+  padding: 10px 40px;
+  margin: 20px;
+  border: solid 1px grey;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: rgb(81, 77, 77);
+  padding: 10px 50px;
+}
+
+/*# sourceMappingURL=main.css.map */

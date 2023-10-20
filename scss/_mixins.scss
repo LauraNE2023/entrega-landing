@@ -1,0 +1,105 @@
+//extends --- don´t repeat your self
+.btn-gral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 30px;
+    background-color: $mainColor;
+    color: $white;
+    width:200px;
+    margin: 10px 30px;
+    text-decoration: none;
+}
+.btn-rounded{
+    @extend .btn-gral;
+    border-radius: 8px;
+}
+.btn-shadow{
+    @extend .btn-gral;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+//mixins
+@mixin textos ($size,$line,$color){
+    font-family: $mainFont;//variable global
+    font-size: $size;//variable local
+    line-height: $line;
+    color:$color;
+    padding: 10px 30px;
+}
+p{
+    @include textos(1.1em,1.4em,red)
+}
+.box-p{
+    @include textos(2em,2.2em,$mainColor )
+}
+
+@mixin flexbox($dir,$justify,$aling,$wrap){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $aling;
+    flex-wrap: $wrap;
+}
+
+@mixin boxes($width,$height,$padding,$margin){
+    width: $width;
+    height: $height;
+    padding: $padding;
+    margin: $margin;
+    border:solid 1px grey;
+}
+
+@mixin headings($fs,$color,$margin,$align){
+    font-size: $fs; //variable local
+    color: $color;//variable local
+    margin: $margin;//variable local
+    font-family: $mainFont;//variable global
+    padding: 10px 30px;
+    @if $align == center {text-align: center}
+    @else if $align == left {text-align: left}
+    @else if $align == right {text-align: right}
+}
+
+h1{
+    @include headings(3em,$mainColor, 10px auto, center )
+}
+h2{
+    @include headings(2em,blue, auto, left );
+}
+h3{
+    @include headings(1.6em,violet, 10px, right)
+}
+
+//maps
+$paleta:(
+    'uno': #af7cce,
+    'dos': #df1ce6,
+    'tres':#bb20c1,
+    'cuatro':#ecdde9,
+    'cinco': #9b9a9b,
+    'seis': #292829,
+    'siete':#e205bb,
+    'ocho':#dfa1d4,
+    'nueve':#bd9eb8,
+    'diez':#e7cfe3,
+    'once': #6e646c,
+    'doce': #6f2f64,
+    'trece':10px 10px 5px 0px rgba(0,0,0,0.75),
+);
+
+.bg-violet{
+    background-color: map-get($map: $paleta, $key:tres );
+}
+.bg-dark-violet{
+    background-color: map-get($map: $paleta, $key: doce);
+}
+.text-pink{
+    color: map-get($map: $paleta, $key: dos);
+}
+.text-gris{
+    color:map-get($map: $paleta, $key: cinco );
+}
+.box-shadow{
+    box-shadow: map-get($map: $paleta, $key:trece );
+}
